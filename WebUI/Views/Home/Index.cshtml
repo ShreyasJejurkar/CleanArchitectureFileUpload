@@ -1,0 +1,12 @@
+﻿
+@model WebUI.ViewModels.StudentViewModel
+<h3>Student registration form</h3>
+<form asp-action="SubmitForm" enctype="multipart/form-data">
+	<div asp-validation-summary="All"></div>  
+
+	<label asp-for="Name"></label>
+	<input asp-for="Name"/>
+	<label asp-for="File"></label>
+	<input asp-for="File" type="file"/>
+	<input type="submit"/>
+</form>
